@@ -12,8 +12,15 @@ import codestudio
 artist = codestudio.load('s1level30')
 a = artist
 
-artist.color = 'green'
+artist.color = 'red'
 artist.right(90)
-# ???
+for count in range(4):
+    a.fd()
+    a.rt(90)
+a.lt(180)
+a.fd(150)
+for count in range(4):
+    a.lt(90)
+    a.fd()
 
 artist.check()
